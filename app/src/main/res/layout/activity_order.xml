@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nhập số bàn -->
+    <EditText
+        android:id="@+id/etTableNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số bàn"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nhập tên món -->
+    <EditText
+        android:id="@+id/etDishName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên món"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nút lưu order -->
+    <Button
+        android:id="@+id/btnSaveOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu Order"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút xem danh sách orders -->
+    <Button
+        android:id="@+id/btnViewSavedOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem Orders"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- RecyclerView hiển thị danh sách -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

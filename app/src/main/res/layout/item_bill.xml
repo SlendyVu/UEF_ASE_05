@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/tvTableNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số bàn: 1"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tổng tiền: 100,000 VNĐ"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày: 28/12/2024"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvPaymentMethod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương thức: Tiền mặt"
+        android:textSize="14sp" />
+</LinearLayout>

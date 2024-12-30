@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/tableNumberInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Table Number"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/dishNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Dish Name" />
+
+    <Button
+        android:id="@+id/addOrderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm orders"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/viewOrdersButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hiển thị Orders"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/ordersDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Orders will appear here..."
+        android:paddingTop="16dp" />
+</LinearLayout>
