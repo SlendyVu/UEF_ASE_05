@@ -1,0 +1,76 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nhập số bàn -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số bàn:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etTableNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số bàn"
+        android:inputType="number" />
+
+    <!-- Nhập số tiền -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số tiền (VNĐ):"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số tiền"
+        android:inputType="numberDecimal" />
+
+    <!-- Nhập ngày thanh toán -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ngày thanh toán:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ngày (dd/MM/yyyy)"
+        android:inputType="date" />
+
+    <!-- Chọn phương thức thanh toán -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phương thức thanh toán:"
+        android:textSize="16sp" />
+
+    <Spinner
+        android:id="@+id/spPaymentMethod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!-- Nút Lưu Hóa Đơn -->
+    <Button
+        android:id="@+id/btnSaveBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lưu hóa đơn"
+        android:layout_marginTop="16dp" />
+    <Button
+        android:id="@+id/btnViewBills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem hóa đơn"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

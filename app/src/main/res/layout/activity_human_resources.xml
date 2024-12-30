@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Input Fields -->
+    <EditText
+        android:id="@+id/employeeNameInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập tên nhân viên" />
+
+    <EditText
+        android:id="@+id/shiftInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nhập ca làm việc (Ví dụ: Ca sáng)" />
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/addEmployeeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm nhân viên"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/viewEmployeesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem danh sách nhân viên"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/generateShiftReportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Báo cáo ca làm việc"
+        android:layout_marginTop="8dp" />
+
+    <!-- Output Area -->
+    <TextView
+        android:id="@+id/employeesDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Kết quả sẽ hiển thị tại đây..."
+        android:textSize="16sp" />
+</LinearLayout>

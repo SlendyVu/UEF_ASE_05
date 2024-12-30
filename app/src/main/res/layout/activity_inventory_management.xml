@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nhập tên nguyên liệu -->
+    <EditText
+        android:id="@+id/ingredientInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên nguyên liệu"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nhập số lượng -->
+    <EditText
+        android:id="@+id/amountInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Số lượng"
+        android:inputType="number"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Nút Thêm -->
+    <Button
+        android:id="@+id/addInventoryButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm vào kho"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Danh sách tồn kho -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/inventoryRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Nút chuyển sang báo cáo -->
+    <Button
+        android:id="@+id/dailyReportButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xem báo cáo hằng ngày" />
+</LinearLayout>
